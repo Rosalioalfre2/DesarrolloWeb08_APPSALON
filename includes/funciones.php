@@ -11,7 +11,7 @@ function obtenerServicios() : array {
         $consulta = mysqli_query($db, $sql);
 
         //Obtener los resultados
-        echo "<pre>";
+        //echo "<pre>";
         
         //Mostrar los resultados
         /*
@@ -32,6 +32,7 @@ function obtenerServicios() : array {
             $servicios[$i]['id'] = $row ['id'];
             $servicios[$i]['nombre'] = $row ['nombre'];
             $servicios[$i]['precio'] = $row ['precio'];
+            $servicios[$i]['fecha'] = $row ['fecha'];
 
             $i++;
         }
@@ -46,5 +47,3 @@ function obtenerServicios() : array {
         var_dump($th);
     }
 }
-
-var_dump( obtenerServicios() );

@@ -82,7 +82,7 @@ async function mostrarServicios() {
         const db = await resultado.json();
         console.log(db);
 
-        // const { servicios} = db;
+        //const { servicios} = db;
 
         db.forEach( servicio => {
 
